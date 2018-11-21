@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Add Task</h1>
+<div mat-dialog-content>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter task" [(ngModel)]="task.task">
+    </mat-form-field>
+    <div class="toggle-example">
+        <input class="time-picker" [(ngModel)]="task.time" [ngxTimepicker]="toggleTimepicker" [disableClick]="true"
+            [format]="24" readonly>
+        <ngx-material-timepicker-toggle [for]="toggleTimepicker"></ngx-material-timepicker-toggle>
+        <ngx-material-timepicker #toggleTimepicker></ngx-material-timepicker>
+    </div>
+    <mat-slide-toggle matInput [(ngModel)]="task.status">Status</mat-slide-toggle>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button cdkFocusInitial (click)="addTask()">Add</button>
+</div>

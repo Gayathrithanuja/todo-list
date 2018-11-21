@@ -1,0 +1,51 @@
+h1 {
+    background-color: dodgerblue;
+    color: #FFF;
+    margin: 0;
+    padding: 20px;
+    font-family: Helvetica;
+    font-weight: normal;
+    opacity: 0.8;
+}
+.ngx-dnd-container:nth-child(odd) {
+    background-color: #eee;
+    width: 60%;
+    margin: auto;
+    min-width: 300px;
+}
+.ngx-dnd-container {
+    border: 2px solid #ddd;
+}
+.ngx-dnd-item {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+.ngx-dnd-item .pull-right {
+    color: #f00; 
+    cursor: pointer;
+    float: right;
+}
+input {
+    border: none;
+    background: none;
+    font-size: inherit;
+    padding-left: 10px;
+}
+.time-picker {
+    width: 45px;
+}
+.ngx-dnd-item div {
+    display: inline-flex;
+    vertical-align: middle;
+}
+.yet-to-come {
+    background-color: orange;
+}
+div.buttons {
+    text-align: right;
+    padding: 10px
+}
+div.buttons button {
+    margin: 0px 10px;
+}
+
